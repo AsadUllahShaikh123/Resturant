@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  
+ 
+  box-sizing: border-box;
+ 
+}
+body
+{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  min-height: 100vh;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.pre-nav{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  align-items: center;
+}
+
+.logo{
+  color: #026e78;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+nav {
+  padding:0.5rem 0;
+}
+
+nav ul 
+{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  flex: 1 auto;
+}
+
+nav ul li a {
+  background-color: #2D99A4;
+  display: block;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+nav ul li a.active {
+  background-color: white;
+  color:  #2D99A4;
+  font-weight: bold;
+}
+
+nav  li a.highlight
+{
+  background-color: #026e78;
+  color:white;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+.content h1 {
+  background-color:  #026e78;
+  padding: 1rem;
+  color:white;
+  font-weight: 200;
+}
+
+.white-link{
+  background-color: white;
+  color: #2D99A4;
+  padding: 1rem;
+}
+.teal-link{
+  background-color: #2D99A4;
+  color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width:771px) {
+  .pre-nav{
+    flex-direction: column;
+    justify-content: center;
+  }  
+  nav {
+
+  }
+  .content{
+    font-size: 0.8rem;
+  }
+}
